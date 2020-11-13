@@ -1,0 +1,416 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+    width:100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: rgb(0,24,51);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,224,255,1) 100%);
+ }
+
+ h1{
+    padding: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 1px;
+}
+
+#about,
+#portfolio,
+#resume,
+#contact {
+    padding-top: 150px;
+}
+
+.container{
+    width:90%;
+}
+
+p.resume{
+    color:whitesmoke;
+    font-size: 20px
+}
+
+#top{
+    padding-top: 15%;
+    padding-bottom:15%;
+    
+}
+
+/* styling for navbar brand element */
+.navbar-brand{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 38px;
+    color: whitesmoke;
+    padding-left: 2%;
+}
+
+.navbar-brand:hover{
+  /* font-weight:900; */
+  color:rgb(6, 184, 255);
+}
+
+a.nav-link{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+a.nav-link:hover{
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:2;
+}
+
+.navbar-nav{
+    margin-right:3%;
+}
+
+.navbar-toggler-icon{
+    color: whitesmoke !important
+}
+/* formatting profile picture */
+#myPic { 
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+#star { 
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 80%;
+
+}
+
+.name {
+    margin-top: 5%;
+    color: whitesmoke;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+.name1{
+  letter-spacing: 15px;
+}
+
+
+.blurb{
+    color: whitesmoke;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom:0;
+    margin-top:2%
+
+
+}
+
+.scale-up-center {
+	animation: scale-up-center 1s cubic-bezier(0.680, -0.250, 0.265, 2.550) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.aboutMe {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.aboutText{
+    line-height: 230%;
+}
+
+.aboutText p{
+    font-size: 20px
+}
+
+.card-text {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* format portfolio pages */
+.portfolioCard {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+    width: 90%;
+    filter: drop-shadow(0px 0px 3px rgb(85, 84, 84));
+
+}
+
+.card-img-top{
+    width: 100%
+}
+
+.card-body{
+    height: 100px;
+    background-color: grey;
+    padding:10px
+}
+
+.card-text{
+  font-size:90%;
+}
+
+#footer {
+    background-color: whitesmoke;
+    border-top: 8px solid  grey !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text{
+    color: rgb(34, 34, 34);
+}
+
+
+/* display of portfolio buttons" */
+.pLink{
+    color:rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+.pLink:hover {
+    color:rgb(0, 21, 177);
+    font-weight: bold;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 24px;
+    width: 34px;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-bottom: 3px;
+  }
+  
+  /*hovering over font awesome icons  */
+  .fa:hover {
+      background-color: whitesmoke;
+      text-shadow: 0 0 4px rgb(65, 65, 65);
+  }
+  
+  /* coloring for individual icons */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-github {
+    background: #430280;
+    color: white;
+  }
+  .fa-github:hover{
+      color: #430280;
+  }
+
+
+
+.containerContact {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.form-body {
+  display: flex;
+}
+
+.form-body-item {
+  flex: 1;
+  padding: 15px;
+}
+
+.form-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: whitesmoke;
+  font-size: 45px;
+}
+
+.form-contact {
+  margin-top: auto;
+  font-size: 12px;
+  color: rgb(231, 228, 228);
+}
+
+.form-form-group {
+  margin-bottom: 15px;
+}
+
+.form-group.message {
+  margin-top: 40px;
+}
+
+.form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.form-control::placeholder {
+  color: rgb(117, 117, 117);
+}
+
+.form-control:focus {
+  border-bottom-color: #ddd;
+  background: none;
+  color: whitesmoke
+}
+
+.form-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-button:hover {
+  color: #55cfff;
+}
+
+
+@media screen and (max-width: 520px) {
+  .form-body {
+    flex-direction: column;
+  }
+
+  .form-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .form-title {
+    flex-direction: row;
+  }
+
+  .form-title span {
+    margin-right: 12px;
+  }
+
+  .form-title:after {
+    display: none;
+  }
+  .name {
+    font-size: 40px;
+    padding-top:800px
+  }
+
+  #myPic{
+    float:right
+  }
+
+  .aboutText{
+      text-align: justify;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .name{
+    font-size:30px !important;
+    margin-top:70px
+    
+  }
+  .navbar{
+    padding-right:0 !important;
+}
+h1{
+  font-size: 40px; 
+}
+.navbar-brand{
+  font-size: 25px;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .form-body {
+    padding: 40px;
+  }
+
+  .form-body-item {
+    padding: 0;
+  }
+}
+
+/* formats screen at custom small size */
+@media screen and (max-width:640px) {
+    .col-sm-6{
+        width: 100%;
+    }
+    .container{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .name {
+      padding-top:70px
+    }
+  
+  }
+  
+  @media screen and (max-width:768px) {
+    .name{
+      font-size:60px;
+      margin-top:70px
+      
+    }
+  }
