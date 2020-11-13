@@ -6,7 +6,7 @@ import Resume from "./pages/Resume"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-portfolio/">
       <div>
         <Route exact path="/" component={Home} />
         <Route exact path="/resume.html" component={Resume} />
