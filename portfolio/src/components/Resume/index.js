@@ -1,3 +1,4 @@
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../assets/style.css"
 function Resume() {
 
@@ -7,8 +8,8 @@ function Resume() {
             <div className="col-md-12 text-center">
                 <h1 className="mb-3">RESUME</h1>
                 <p className="resume">Checkout my resume for more information!</p>
-                <a href="/resume.html"><button type="button" className="btn btn-light">View or
-                        Download</button></a>
+                <Link to="/resume.html"><button type="button" className="btn btn-light">View or
+                        Download</button></Link>
             </div>
         </div>
     </div>

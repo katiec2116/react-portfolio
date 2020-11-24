@@ -1,9 +1,10 @@
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../assets/style.css"
 function Nav() {
 
     return (
         <nav sticky="top" className="navbar navbar-expand-lg py-3 fixed-top">
-            <a className="navbar-brand" href="/">KATIE CAMPBELL</a>
+            <Link className="navbar-brand" href="/">KATIE CAMPBELL</Link>
             <button className="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -11,10 +12,10 @@ function Nav() {
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a className="nav-link" href="/#about">About</a>
-                    <a className="nav-link" href="/#portfolio">Portfolio</a>
-                    <a className="nav-link" href="/#resume">Resume</a>
-                    <a className="nav-link" href="/#contact">Contact</a>
+                    <Link className="nav-link" to="/#about">About</Link>
+                    <Link className="nav-link" to="/#portfolio">Portfolio</Link>
+                    <Link className="nav-link" to="/#resume">Resume</Link>
+                    <Link className="nav-link" to="/#contact">Contact</Link>
                 </div>
             </div>
         </nav>

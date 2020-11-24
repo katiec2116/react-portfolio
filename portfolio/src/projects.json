@@ -1,5 +1,11 @@
 [
     {
+        "title": "Travelogger",
+        "image": "images/travelogger.png",
+        "url": "https://travelogger-project.herokuapp.com/",
+        "github": "https://github.com/katiec2116/travelogger"
+    },
+    {
         "title": "80/20 Rule",
         "image": "images/8020500.jpg",
         "url": "https://katiec2116.github.io/80-20-Rule/",
