@@ -18,20 +18,17 @@ function About() {
                             I'm from Melbourne, FL and moved to downtown Orlando at the beginning of 2020 to be closer
                             to my
                             job.
-                            I'm a double gradute from Florida State University, first graduating in 2017
-                            with my bachelor's in environmental science and then graduating again in 2019 with my
+                            I'm a double graduate from Florida State University, first graduating in 2017
+                            with my bachelor's in environmental science and then again in 2019 with my
                             masters in geographic information science. I've been working for Orange County Government as
-                            a
-                            GIS
-                            Specialist for a year and a half now.
+                            a GIS Specialist for a year and a half now.
                         </p>
                         <p>
-                            I'm currently taking an intensive full stack web development bootcamp through the University
+                            I recently completed an intensive full stack web development bootcamp through the University
                             of
-                            Central Florida. The languages we are focusing on are HTML, CSS, Javascript, JQuery, Node,
+                            Central Florida. The languages and technology I learned included HTML, CSS, Javascript, JQuery, Node,
                             Handlebars, MySQL, MongoDB, Express, and React and I also have past experience with C++ and
-                            Python. At the end of this bootcamp I'll be equiped to enter the world of web developement
-                            professionly and I am excited to work with like-minded individuals and look forward to
+                            Python. I am excited to join the world of web development professionaly, work with like-minded individuals, and look forward to
                             making some amazing applications!
                         </p>
                     </div>

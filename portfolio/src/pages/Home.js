@@ -13,7 +13,7 @@ function Home() {
         <About />
         <Portfolio />
         <Resume />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     );
