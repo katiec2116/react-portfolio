@@ -4,7 +4,7 @@ import profile from "./circle-cropped.png";
 function About() {
 
     return (
-        <section id="about">
+        <section style={{paddingTop:"80px"}} id="about">
             <div className="container pt-2">
                 <div className="row">
                     <div className="col-md-12 text-center aboutMe">

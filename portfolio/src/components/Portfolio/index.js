@@ -5,8 +5,8 @@ import projects from "../../projects.json"
 function Portfolio() {
 
     return (
-        <section>
-            <div id="portfolio" className="row">
+        <section >
+            <div id="portfolio" className="row" style={{paddingTop:"80px"}}>
                 <div className="container">
                     <div className="col-sm-12">
                         <h1 className="text-center mb-5">PORTFOLIO</h1>
