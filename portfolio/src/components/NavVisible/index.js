@@ -9,7 +9,7 @@ import {
   NavLinks,
 } from "./Nav";
 import { FaBars } from "react-icons/fa";
-// import logo from "../"
+import logo from "../../assets/initialLogo.png"
 import {animateScroll as scroll} from "react-scroll"
 // import Pdf from "../../Resume_06-2021.pdf"
 
@@ -40,7 +40,7 @@ const NavVisible = ({toggle}) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavContainer>
-          <NavLogo to="/" onClick={toggleHome}></NavLogo>
+          <NavLogo to="/" onClick={toggleHome}><img src={logo} width="60px"/></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
