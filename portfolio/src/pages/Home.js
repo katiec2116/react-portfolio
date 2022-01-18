@@ -20,7 +20,7 @@ function Home() {
       <NavVisible isOpen={isOpen} toggle={toggle} />
       <Nav toggle={toggle} />
       <Header />
-      <About />
+      {/* <About /> */}
       <Portfolio />
       <Resume />
       {/* <Contact /> */}
