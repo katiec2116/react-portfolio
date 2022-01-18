@@ -1,24 +1,30 @@
-import { HashLink as Link } from 'react-router-hash-link';
-import "../../assets/style.css"
-function Nav() {
+import React from 'react'
+import { NavbarContainer, Icon, CloseIcon, NavbarWrapper, NavbarMenu, NavbarLink } from "./Navbar"
 
+const Nav = ({ isOpen, toggle }) => {
     return (
-        <nav className="navbar navbar-expand-lg py-3 fixed-top">
-            <Link className="navbar-brand" to="/#top">KATIE CAMPBELL</Link>
-            <button className="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <Link className="nav-link" to="/#about">About</Link>
-                    <Link className="nav-link" to="/#portfolio">Portfolio</Link>
-                    <Link className="nav-link" to="/#resume">Resume</Link>
-                    {/* <Link className="nav-link" to="/#contact">Contact</Link> */}
-                </div>
-            </div>
-        </nav>
+        <NavbarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
+                <CloseIcon />
+            </Icon>
+            <NavbarWrapper>
+                <NavbarMenu>
+                    <NavbarLink onClick={toggle} to="about">
+                        About
+                    </NavbarLink>
+                    <NavbarLink onClick={toggle} to="projects">
+                        Projects
+                    </NavbarLink>
+                    <NavbarLink onClick={toggle} to="contact">
+                        Contact
+                    </NavbarLink>
+                    <NavbarLink onClick={toggle} to="contact">
+                        Resume
+                    </NavbarLink>
+                </NavbarMenu>
+            </NavbarWrapper>
+        </NavbarContainer>
     )
 }
-export default Nav;  
+
+export default Nav;
