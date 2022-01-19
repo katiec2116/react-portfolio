@@ -71,7 +71,7 @@ export const HeaderH1 = styled.h1`
 export const HeaderP = styled.p`
   margin-top: 0px;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight:300;
   text-align: center;
   max-width: 800px;

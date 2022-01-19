@@ -1,30 +1,27 @@
 import React from 'react'
-import { NavbarContainer, Icon, CloseIcon, NavbarWrapper, NavbarMenu, NavbarLink } from "./Navbar"
+import { Navbar, Container, Nav } from "react-bootstrap"
+import "./Nav.css"
+import logo from "../../assets/initialLogo.png"
 
-const Nav = ({ isOpen, toggle }) => {
+
+const Navigation = () => {
     return (
-        <NavbarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon onClick={toggle}>
-                <CloseIcon />
-            </Icon>
-            <NavbarWrapper>
-                <NavbarMenu>
-                    <NavbarLink onClick={toggle} to="about">
-                        About
-                    </NavbarLink>
-                    <NavbarLink onClick={toggle} to="projects">
-                        Projects
-                    </NavbarLink>
-                    <NavbarLink onClick={toggle} to="contact">
-                        Contact
-                    </NavbarLink>
-                    <NavbarLink onClick={toggle} to="contact">
-                        Resume
-                    </NavbarLink>
-                </NavbarMenu>
-            </NavbarWrapper>
-        </NavbarContainer>
+        <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+            {/* <Container> */}
+                <Navbar.Brand href="#home"><img src={logo} width="60px" /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#about">About</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link>Resume</Nav.Link>
+                    </Nav>
+
+                </Navbar.Collapse>
+            {/* </Container> */}
+        </Navbar>
     )
 }
 
-export default Nav;
+export default Navigation;

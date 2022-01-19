@@ -1,4 +1,4 @@
-import "../../assets/style.css"
+// import "../../assets/style.css"
 import Project from "../Project"
 import projects from "../../projects.json"
 import {
@@ -12,7 +12,7 @@ function Portfolio() {
     return (
         <PortfolioContainer id="projects">
             <PortfolioH1>
-                Projects
+                Projects from Bootcamp
                 <Bar />
             </PortfolioH1 >
             <section >

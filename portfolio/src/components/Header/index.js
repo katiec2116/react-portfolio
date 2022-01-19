@@ -1,9 +1,10 @@
 import React from 'react'
 import { HeaderContainer, HeaderBackground, ImageBackground, HeaderContent, HeaderH1, HeaderP, HeaderButtonWrapper } from './Header'
-import "../../App.css"
+// import "../../App.css"
 import { init } from "ityped"
 import { Button } from "../Button"
 import {useEffect, useRef } from "react"
+import pdf from "../kcampbell.pdf"
 
 const Header = () => {
     
@@ -17,7 +18,7 @@ const Header = () => {
     }, [])
 
     const onResumeClick = ()  => {
-        // window.open(Pdf);
+        window.open(pdf);
       }
 
     return (
@@ -27,7 +28,7 @@ const Header = () => {
             </HeaderBackground>
             <HeaderContent>
                 <HeaderH1>Katie Campbell</HeaderH1>
-                <HeaderP>  <h4>I am a <span ref={textRef}> </span></h4></HeaderP>
+                <HeaderP>I am a <span ref={textRef}> </span></HeaderP>
                 <HeaderButtonWrapper>
                     <Button>
                         Latest Work
