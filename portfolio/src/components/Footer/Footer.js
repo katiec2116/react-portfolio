@@ -38,13 +38,13 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactIcons = styled.div`
-  color: #DF96FF !important;
+  color: yellow !important;
   margin-left: 25px;
   margin-right: 25px;
   font-size: 30px;
   transition: all 0.3s ease-in-out;
   &:hover {
-    color: #000000;
+    color: green;
   }
   @media screen and (max-width: 675px) {
     font-size: 20px;

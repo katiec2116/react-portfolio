@@ -22,7 +22,7 @@ function Footer() {
                     </ContactIcons>
                     <ContactIcons>
                         <a
-                            id="contact"
+                            id="contact-icon"
                             href="https://github.com/katiec2116"
                             target="_blank"
                         >

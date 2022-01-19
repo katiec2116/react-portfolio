@@ -2,9 +2,6 @@ import "./Project.css"
 
 function Project(props) {
     return (
-
-
-
         <div className="project-row">
             <div className="project-image">
                 <a href={props.deployed} target="_blank"><img src={props.image} width="400px" height="304px" /></a> 
@@ -17,10 +14,6 @@ function Project(props) {
                     <a href={props.deployed} target="_blank">View Demo </a></div>
             </div>
         </div>
-
-
-
-
     )
 }
 

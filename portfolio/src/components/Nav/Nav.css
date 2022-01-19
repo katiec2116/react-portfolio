@@ -9,7 +9,16 @@
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: 0
-  /* Nav: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
+}
+
+#dark {
+    background: #010101;
+    transition: 0.8s all ease;
+}
+
+#transparent {
+    background: transparent;
+    transition: 0.8s all ease;
 }
 
 #closeIcon {
@@ -51,9 +60,10 @@
   font-family:poppins;
   font-weight:600;
   cursor: pointer;
-  font-size:2.5rem;
-  /* :hover {
+  font-size:1rem;
+}
+
+.navbar-link:hover {
     color: #555555;
     transition: 0.2s ease-in-out;
-  } */
-}
+  }
