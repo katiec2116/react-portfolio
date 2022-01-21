@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.skills {
+  width: 100%;
+}
+.skill-item {
+  padding-bottom: 20px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.skill-title {
+  color: #ffffff;
+  font-family: poppins;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.progress {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 15px;
+  width: 100%;
+}
+.progess-bar {
+  background-color: #080808;
+  border-radius: 10px;
+  height: 15px;
+  animation: loading 2s;
+}
+.progess-html {
+  width: 98%;
 }
 
-.App-link {
-  color: #61dafb;
+.progess-js {
+  width: 85%;
 }
 
-@keyframes App-logo-spin {
+.progess-sqlmongo {
+  width: 60%;
+}
+
+.progess-nodeexp {
+  width: 70%;
+}
+
+.progess-react {
+  width: 75%;
+}
+.progess-bs {
+  width: 90%;
+}
+.progess-ps {
+  width: 90%;
+}
+.progess-id {
+  width: 80%;
+}
+
+@keyframes loading {
   from {
-    transform: rotate(0deg);
+    width: 0%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  filter: none;
+}
+
+
+
+.ityped-cursor {
+  animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+  50% {
+    opacity:1;
   }
+  100% {
+    opacity:0;
+  }
+}
+
+a:link,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:link:hover,
+a:active:hover,
+a:visited:hover {
+  color:green;
+  text-decoration: none;
 }

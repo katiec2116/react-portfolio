@@ -1,56 +1,22 @@
 [
     {
         "title": "Travelogger",
-        "image": "images/travelogger500.png",
+        "image": "images/travel.png",
         "url": "https://travelogger-project.herokuapp.com/",
         "github": "https://github.com/katiec2116/travelogger"
     },
     {
         "title": "80/20 Rule",
-        "image": "images/8020500.jpg",
+        "image": "images/nutrition.png",
         "url": "https://katiec2116.github.io/80-20-Rule/",
         "github": "https://github.com/katiec2116/80-20-Rule"
+
     },
     {
         "title": "Alien Town",
-        "image": "images/alien500.jpg",
+        "image": "images/alien.png",
         "url": "https://katiec2116.github.io/alientown/",
         "github": "https://github.com/katiec2116/80-20-Rule"
-    },
-    {
-        "title": "Coding Quiz Challenge",
-        "image": "images/code500.jpg",
-        "url": "https://katiec2116.github.io/Coding-Quiz-Challenge/",
-        "github": "https://github.com/katiec2116/Coding-Quiz-Challenge"
-    },
-    {
-        "title": "Weather Dashboard",
-        "image": "images/weather500.png",
-        "url": "https://katiec2116.github.io/weather-dashboard/",
-        "github": "https://github.com/katiec2116/weather-dashboard"
-    },
-    {
-        "title": "Note Taker",
-        "image": "images/note500.png",
-        "url": "https://boiling-journey-74250.herokuapp.com/",
-        "github": "https://github.com/katiec2116/note-taker"
-    },
-    {
-        "title": "Eat-Da-Burger",
-        "image": "images/burger500.gif",
-        "url": "https://safe-inlet-06204.herokuapp.com/",
-        "github": "https://github.com/katiec2116/burger"
-    },
-    {
-        "title": "Work Day Scheduler",
-        "image": "images/workday500.png",
-        "url": "https://katiec2116.github.io/Work-Day-Scheduler/",
-        "github": "https://github.com/katiec2116/Work-Day-Scheduler"
-    },
-    {
-        "title": "Employee Directory",
-        "image": "images/EmployeeDirectory.png",
-        "url": "https://katiec2116.github.io/employee-directory/",
-        "github": "https://katiec2116.github.io/employee-directory/"
     }
+    
 ]

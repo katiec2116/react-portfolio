@@ -1,24 +1,39 @@
-import { HashLink as Link } from 'react-router-hash-link';
-import "../../assets/style.css"
-function Nav() {
+import React, { useState, useEffect } from 'react'
+import { Navbar, Nav } from "react-bootstrap"
+import "./Nav.css"
+import logo from "../../assets/initialLogo.png"
+import PDF from "../kcampbell.pdf"
+
+
+
+const Navigation = () => {
+    const [background, setBackground] = useState(false)
+    const ListenScroll = e => {
+        if (window.scrollY > 100) {
+            setBackground(true)
+        } else {
+            setBackground(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', ListenScroll)
+    }, [])
 
     return (
-        <nav className="navbar navbar-expand-lg py-3 fixed-top">
-            <Link className="navbar-brand" to="/#top">KATIE CAMPBELL</Link>
-            <button className="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <Link className="nav-link" to="/#about">About</Link>
-                    <Link className="nav-link" to="/#portfolio">Portfolio</Link>
-                    <Link className="nav-link" to="/#resume">Resume</Link>
-                    {/* <Link className="nav-link" to="/#contact">Contact</Link> */}
-                </div>
-            </div>
-        </nav>
+        <Navbar fixed="top" collapseOnSelect expand="lg" id={background == true ? "dark" : "transparent"}>
+            <Navbar.Brand href="#about"><img src={logo} width="60px" /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="ml-auto">
+                    <a class="navbar-link mx-2" href="#about">ABOUT</a>
+                    <a class="navbar-link mx-2" href="#projects">PROJECTS</a>
+                    <a class="navbar-link mx-2" href="#contact">CONTACT</a>
+                    <a class="navbar-link mx-2" href={PDF} target="_blank">RESUME</a>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     )
 }
-export default Nav;  
+
+export default Navigation;

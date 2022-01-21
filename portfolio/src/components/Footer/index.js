@@ -1,16 +1,43 @@
-import "../../assets/style.css"
+import { FooterContainer, FooterH1, ContactContainer, ContactIcons, IconWrapper } from "./Footer"
+import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+import "./footer.css"
+
 function Footer() {
 
     return (
-        <footer id="footer" className="py-2 fixed-bottom border-top">
-            <div className="container footer-text text-center">
-                Connect with me:
-
-            <a href="https://www.linkedin.com/in/katiec2116/" target="_blank" className="fa fa-linkedin"></a>
-                <a href="https://github.com/katiec2116" target="_blank" className="fa fa-github"></a>
-                <p>321-609-0533 | <a href="mailto:KatieCampbell21@outlook.com">katiecampbell21@outlook.com</a></p>
-            </div>
-        </footer>
+        <>
+            <ContactContainer id="contact">
+                <IconWrapper>
+                    <ContactIcons>
+                        <a href="mailto:katiecampbell21@outlook.com" target="_blank"> <GrMail className="icon" style={{color: "white"}}/> </a>
+                    </ContactIcons>
+                    <ContactIcons>
+                        <a 
+                            href="https://www.linkedin.com/in/katiec2116/"
+                            target="_blank"
+                        >
+                            <FaLinkedinIn className="icon"style={{color: "white"}} />
+                        </a>
+                    </ContactIcons>
+                    <ContactIcons >
+                        <a 
+                            href="https://github.com/katiec2116"
+                            target="_blank"
+                        >
+                            <FaGithub className="icon"style={{color: "white"}} />
+                        </a>
+                    </ContactIcons>
+                </IconWrapper>
+            </ContactContainer>
+            <FooterContainer>
+                    <FooterH1>
+                        Made with ♡ by Katie Campbell.
+                    </FooterH1>
+            </FooterContainer>
+        </>
     )
 }
-export default Footer;  
+export default Footer;
+
