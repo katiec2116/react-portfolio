@@ -6,7 +6,7 @@ function Project(props) {
     return (
         <div className="project-row">
             <div className="project-image">
-                <a href={props.deployed} target="_blank"><img src={props.image} width="400px" height="390px" />
+                <a href={props.deployed} target="_blank"><img src={props.image} width="400px" height="290px" />
                 </a> 
             </div>
             
