@@ -1,5 +1,4 @@
 import "./Project.css"
-import headerImg from "../../assets/wandyweb.png"
 import {BsBoxArrowUpRight} from "react-icons/bs"
 
 
@@ -7,7 +6,7 @@ function Project(props) {
     return (
         <div className="project-row">
             <div className="project-image">
-                <a href={props.deployed} target="_blank"><img src={headerImg} width="400px" height="390px" />
+                <a href={props.deployed} target="_blank"><img src={props.image} width="400px" height="390px" />
                 </a> 
             </div>
             
