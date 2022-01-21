@@ -1,7 +1,9 @@
-import { FooterContainer, FooterContent, FooterH1, ContactContainer, ContactIcons, IconWrapper } from "./Footer"
+import { FooterContainer, FooterH1, ContactContainer, ContactIcons, IconWrapper } from "./Footer"
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import "./footer.css"
+
 function Footer() {
 
     return (
@@ -9,34 +11,30 @@ function Footer() {
             <ContactContainer id="contact">
                 <IconWrapper>
                     <ContactIcons>
-                        <a id="contact" href="mailto:katiecampbell21@outlook.com" target="_blank"> <GrMail /> </a>
+                        <a href="mailto:katiecampbell21@outlook.com" target="_blank"> <GrMail className="icon" style={{color: "white"}}/> </a>
                     </ContactIcons>
-                    <ContactIcons style={{color: "#DF96FF"}}>
+                    <ContactIcons>
                         <a 
-                            id="contact"
                             href="https://www.linkedin.com/in/katiec2116/"
                             target="_blank"
                         >
-                            <FaLinkedinIn />
+                            <FaLinkedinIn className="icon"style={{color: "white"}} />
                         </a>
                     </ContactIcons>
-                    <ContactIcons>
-                        <a
-                            id="contact-icon"
+                    <ContactIcons >
+                        <a 
                             href="https://github.com/katiec2116"
                             target="_blank"
                         >
-                            <FaGithub />
+                            <FaGithub className="icon"style={{color: "white"}} />
                         </a>
                     </ContactIcons>
                 </IconWrapper>
             </ContactContainer>
             <FooterContainer>
-                <FooterContent>
                     <FooterH1>
                         Made with ♡ by Katie Campbell.
                     </FooterH1>
-                </FooterContent>
             </FooterContainer>
         </>
     )

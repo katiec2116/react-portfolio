@@ -22,7 +22,7 @@ const Navigation = () => {
 
     return (
         <Navbar fixed="top" collapseOnSelect expand="lg" id={background == true ? "dark" : "transparent"}>
-            <Navbar.Brand href="#home"><img src={logo} width="60px" /></Navbar.Brand>
+            <Navbar.Brand href="#about"><img src={logo} width="60px" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">

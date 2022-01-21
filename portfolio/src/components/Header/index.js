@@ -22,7 +22,7 @@ const Header = () => {
       }
 
     return (
-        <HeaderContainer>
+        <HeaderContainer id="about">
             <HeaderBackground>
                 <ImageBackground/>
             </HeaderBackground>
@@ -30,7 +30,7 @@ const Header = () => {
                 <HeaderH1>Katie Campbell</HeaderH1>
                 <HeaderP>I am a <span ref={textRef}> </span></HeaderP>
                 <HeaderButtonWrapper>
-                    <Button>
+                    <Button to="projects">
                         Latest Work
                     </Button>
 

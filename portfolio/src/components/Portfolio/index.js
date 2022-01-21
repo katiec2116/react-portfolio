@@ -1,6 +1,7 @@
 // import "../../assets/style.css"
 import Project from "../Project"
 import projects from "../../projects.json"
+import work from "../../work.json"
 import {
     PortfolioContainer,
     PortfolioH1,
@@ -11,12 +12,25 @@ import {
 function Portfolio() {
 
     return (
-        <PortfolioContainer id="projects">
+        <div  id="projects">
+        <PortfolioContainer>
             <PortfolioH1>
-                Bootcamp Projects
+                Professional
                 <Bar />
             </PortfolioH1 >
             <section >
+            {work.map((item, i) => (
+                    <Project
+                        key={i}
+                        title={item.title}
+                        image={item.image}
+                        deployed={item.url}
+                    />
+                ))}
+                <PortfolioH1>
+                Bootcamp
+                <Bar />
+            </PortfolioH1 >
                 {projects.map((item, i) => (
                     <Project
                         key={i}
@@ -28,6 +42,7 @@ function Portfolio() {
                 ))}
             </section>
         </PortfolioContainer>
+        </div>
     )
 }
 export default Portfolio;

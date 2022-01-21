@@ -21,6 +21,8 @@ export const Button = styled(Link)`
   margin-right: 15px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #75c9c0;
+    background: #DF96FF;
+    color: white;
+    text-decoration: none;
   }
 `;

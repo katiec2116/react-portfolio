@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-// import { Link as LinkScroll } from "react-scroll";
 
 export const FooterContainer = styled.div`
   background-color: #090909;
@@ -11,19 +9,14 @@ export const FooterContainer = styled.div`
   text-align: center;
 `;
 
-export const FooterContent = styled.div`
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-`;
-
 export const FooterH1 = styled.h1`
   color: #DF96FF;
   font-size: 14px;
   font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: roboto;
+  letter-spacing: 1px;
 `;
 
 export const ContactContainer = styled.div`
