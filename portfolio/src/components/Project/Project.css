@@ -25,16 +25,21 @@
     width: 100%;
     box-shadow: 0 0 20px rgb(204, 204, 204);
     position: relative;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    transition: 0.3s all ease;
   }
   
   .project-image img:hover {
   cursor:pointer;
+  filter: grayscale(0%);
+  transition: 0.3s all ease;
   }
+
   
   .project-details {
     display: flex;
     flex-direction: column;
-    /* align-items:center; */
     justify-content: center;
     width: 40%;
     margin-left: 20px;
@@ -81,7 +86,7 @@
     flex-direction: row;
     justify-content: space-between;
     border: 0;
-    background-color: black;
+    background-color: #DF96FF;
     color: white;
     font-family: poppins;
     font-size: 16px;
@@ -99,6 +104,7 @@
   
   .project-buttons a:hover {
     background-color: black;
+    color: white
   }
   
   #go-icon {

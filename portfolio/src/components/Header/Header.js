@@ -37,13 +37,13 @@ export const ImageBackground = styled.div`
   object-fit: cover;
   background: #222222;
   background-attachment:fixed;
-  background-size:cover;
+  opacity: 0.4;
+  // background-size:cover;
   background-image: url(${headerImg});
 `;
 
 export const HeaderContent = styled.div`
   z-index: 3;
-  /* max-width: 1200px; */
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -53,7 +53,9 @@ export const HeaderContent = styled.div`
 
 export const HeaderH1 = styled.h1`
   color: #ffffff;
-  font-size: 75px;
+  font-size: 100px;
+  letter-spacing:2px;
+  font-weight:700;
   text-align: center;
   font-family: poppins;
   text-transform: uppercase;
@@ -72,7 +74,7 @@ export const HeaderP = styled.p`
   margin-top: 0px;
   color: #ffffff;
   font-size: 30px;
-  font-weight:300;
+  font-weight:500;
   text-align: center;
   max-width: 800px;
   font-family: roboto;

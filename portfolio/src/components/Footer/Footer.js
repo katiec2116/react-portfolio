@@ -38,7 +38,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactIcons = styled.div`
-  color: yellow !important;
+  color: green !important;
   margin-left: 25px;
   margin-right: 25px;
   font-size: 30px;
@@ -53,30 +53,8 @@ export const ContactIcons = styled.div`
   }
 `;
 
-
-export const ContactContent = styled.h1`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-`;
 export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-`;
-
-export const ContactMethod = styled.h1`
-  color: white;
-  font-family: roboto;
-  font-weight: 400;
-  font-size: 18px;
-`;
-
-export const ContactMessage = styled.span`
-  color: #DF96FF;
-  font-family: roboto;
-  font-weight: 400;
-  font-size: 18px;
 `;

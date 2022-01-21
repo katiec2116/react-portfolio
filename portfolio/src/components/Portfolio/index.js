@@ -7,12 +7,13 @@ import {
     Bar
 } from "./Portfolio";
 
+
 function Portfolio() {
 
     return (
         <PortfolioContainer id="projects">
             <PortfolioH1>
-                Projects from Bootcamp
+                Bootcamp Projects
                 <Bar />
             </PortfolioH1 >
             <section >

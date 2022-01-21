@@ -11,8 +11,8 @@ function Footer() {
                     <ContactIcons>
                         <a id="contact" href="mailto:katiecampbell21@outlook.com" target="_blank"> <GrMail /> </a>
                     </ContactIcons>
-                    <ContactIcons>
-                        <a
+                    <ContactIcons style={{color: "#DF96FF"}}>
+                        <a 
                             id="contact"
                             href="https://www.linkedin.com/in/katiec2116/"
                             target="_blank"

@@ -1,14 +1,14 @@
 [
     {
         "title": "Travelogger",
-        "image": "/react-portfolio/static/media/travel.2db36c17.png",
+        "image": "images/travel.png",
         "url": "https://travelogger-project.herokuapp.com/",
         "github": "https://github.com/katiec2116/travelogger",
         "name": "travel"
     },
     {
         "title": "80/20 Rule",
-        "image": "/react-portfolio/static/media/nutrition.a60d9cb3.png",
+        "image": "images/nutrition.png",
         "url": "https://katiec2116.github.io/80-20-Rule/",
         "github": "https://github.com/katiec2116/80-20-Rule",
         "name": "8020"
@@ -16,7 +16,7 @@
     },
     {
         "title": "Alien Town",
-        "image": "/react-portfolio/static/media/alien.9be6d31b.png",
+        "image": "images/alien.png",
         "url": "https://katiec2116.github.io/alientown/",
         "github": "https://github.com/katiec2116/80-20-Rule"
     }
