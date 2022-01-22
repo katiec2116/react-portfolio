@@ -12,7 +12,7 @@ import {
 function Portfolio() {
 
     return (
-        <div  id="projects">
+        <div id="projects">
         <PortfolioContainer>
             <PortfolioH1>
                 Professional

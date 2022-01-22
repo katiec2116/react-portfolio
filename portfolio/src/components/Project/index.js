@@ -15,7 +15,7 @@ function Project(props) {
                 <h3>{props.tech}</h3>
                 <div className="project-buttons">
                     {props.github && <a href={props.github} target="_blank">View Repo <BsBoxArrowUpRight id="go-icon"/></a> }
-                    <a href={props.deployed} target="_blank">View Demo <BsBoxArrowUpRight id="go-icon"/></a></div>
+                    <a href={props.deployed} target="_blank">View App <BsBoxArrowUpRight id="go-icon"/></a></div>
             </div>
         </div>
     )
