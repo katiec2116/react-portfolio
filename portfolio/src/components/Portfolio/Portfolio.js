@@ -8,7 +8,7 @@ export const PortfolioContainer = styled.div`
   align-items: center;
   background: #ffffff;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 90px;
   padding-left: 8%;
   padding-right: 8%;
 `;

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Navigation from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer"
+import About from "./components/About"
 import React, { useState } from 'react'
 
 
@@ -16,7 +17,8 @@ function App() {
     <div>
       <Navigation toggle={toggle} />
       <Header />
-      <Portfolio id="projects" />
+      <Portfolio />
+      {/* <About/> */}
       <Footer />
     </div>
   );
